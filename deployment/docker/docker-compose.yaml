@@ -1,7 +1,7 @@
 version: "3"
 services:
   reverseproxy:
-      image: bobbyjenrow/reverseproxy
+      image: bobbyjenrow/udagram-reverseproxy
       ports:
           - 8080:8080
       restart: always

@@ -19,11 +19,11 @@ before_install:
 install:
   - docker-compose -f deployment/docker/docker-compose-build.yaml build --parallel
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - docker tag bobbyjenrow/udagram-users:latest
+  - docker tag bobbyjenrow/udagram-users:local bobbyjenrow/udagram-users:latest
   - docker push bobbyjenrow/udagram-users:latest
-  - docker tag bobbyjenrow/udagram-feed:latest
+  - docker tag bobbyjenrow/udagram-feed:local bobbyjenrow/udagram-feed:latest
   - docker push bobbyjenrow/udagram-feed:latest
-  - docker tag bobbyjenrow/udagram-reverseproxy:latest
+  - docker tag bobbyjenrow/udagram-reverseproxy:local bobbyjenrow/udagram-reverseproxy:latest
   - docker push bobbyjenrow/udagram-reverseproxy:latest
-  - docker tag bobbyjenrow/udagram-frontend:latest
+  - docker tag bobbyjenrow/udagram-frontend:local bobbyjenrow/udagram-frontend:latest
   - docker push bobbyjenrow/udagram-frontend:latest

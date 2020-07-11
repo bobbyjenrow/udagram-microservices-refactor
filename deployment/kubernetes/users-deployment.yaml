@@ -17,8 +17,6 @@ spec:
       containers:
       - name: backend-users
         image: bobbyjenrow/udagram-users
-        ports:
-        - containerPort: 80
         imagePullPolicy: Always  
         resources:
           requests:

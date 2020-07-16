@@ -1,0 +1,6 @@
+NAME                                    READY   STATUS    RESTARTS   AGE
+backend-feed-85ddb9d669-8gfgl           1/1     Running   0          27m
+backend-user-6b5669d95-hjj6z            1/1     Running   0          27m
+backend-user-6b5669d95-mh9bt            1/1     Running   0          15m
+udagram-frontend-5b95c76c94-gwnc7       1/1     Running   0          27m
+udagram-reverseproxy-5cfdfd584b-2qpzx   1/1     Running   0          27m

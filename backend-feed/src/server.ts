@@ -28,9 +28,8 @@ import {V0_FEED_MODELS} from './controllers/v0/model.index';
     methods: 'GET,HEAD,OPTIONS,PUT,PATCH,POST,DELETE',
     origin: config.url,
   }));
-  app.use(function (req, res, next) {
-    res.header("Access-Control-Allow-Origin", "*");
-  })
+
+  
   app.use('/api/v0/', IndexRouter);
 
   // Root URI call
@@ -41,7 +40,7 @@ import {V0_FEED_MODELS} from './controllers/v0/model.index';
 
   // Start the Server
   app.listen( port, () => {
-    console.log( `server running ${config.url}` );
+    console.log( `server running ${port}` );
     console.log( `press CTRL+C to stop server` );
   } );
 })();

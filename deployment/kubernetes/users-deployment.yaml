@@ -1,9 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: backend-user
   labels:
     app: backend-user
+  name: backend-user
 spec:
   replicas: 1
   selector:
@@ -15,7 +15,7 @@ spec:
         app: backend-user
     spec:
       containers:
-      - name: backend-users
+      - name: backend-user
         image: bobbyjenrow/udagram-users
         imagePullPolicy: Always  
         resources:
